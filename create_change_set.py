@@ -65,4 +65,7 @@ for i in range(0, len(sl)):
 
 d = tabulate(data, headers=["SL", "ACTION", "RecourseID", "LogicID", "Replacement"])
 
-send_sns(d)
+if not sl:
+    print("No Change to apply !")
+else:
+    send_sns(d)
