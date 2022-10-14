@@ -1,6 +1,6 @@
 {
   "Parameters" : {
-   "IAMPolicyNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMPolicy",
+   "IAMPolicyNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMPolicy-new",
     "IAMPolicyNameStepfunction": "Stepfunction-DR-IAMPolicy",
     "IAMRoleNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMRole",
     "IAMRoleNameStepfunction": "Stepfunction-DR-IAMRole",
