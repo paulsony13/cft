@@ -45,9 +45,7 @@
     "IAMRoleLambdaECS": {
       "Type": "AWS::IAM::Role",
       "Properties": {
-        "RoleName": {
-          "Ref": "IAMRoleNameLambdaECS"
-        },
+        "RoleName": {"Fn::Join" : ["-",[ { "Ref": "IAMRoleNameLambdaECS" }, { "Ref": "AWS::Region" } ] ]},
         "AssumeRolePolicyDocument": {
           "Version": "2012-10-17",
           "Statement": [
@@ -135,9 +133,7 @@
     "IAMRoleStepfunction": {
       "Type": "AWS::IAM::Role",
       "Properties": {
-        "RoleName": {
-          "Ref": "IAMRoleNameStepfunction"
-        },
+        "RoleName":  {"Fn::Join" : ["",[ { "Ref": "IAMRoleNameStepfunction" }, { "Ref": "AWS::Region" } ] ]},
         "AssumeRolePolicyDocument": {
           "Version": "2012-10-17",
           "Statement": [
