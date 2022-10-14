@@ -1,8 +1,8 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Template for IAM policy for DR Workflow",
-  "Metadatas": {},
-  "Parameterss": {
+  "Metadata": {},
+  "Parameters": {
     "IAMPolicyNameLambdaECS": {
       "Description": "Enter the name IAM Policy name for ECS Desired Count Lambda",
       "Type": "String",
