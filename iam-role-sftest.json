@@ -45,7 +45,7 @@
     "IAMRoleLambdaECS": {
       "Type": "AWS::IAM::Role",
       "Properties": {
-        "RoleName": {"Fn::Join" : ["-",[ { "Ref": "IAMRoleNameLambdaECS" }, { "Ref": "AWS::Region" }, "change-1" ] ]},
+        "RoleName": {"Fn::Join" : ["-",[ { "Ref": "IAMRoleNameLambdaECS" }, { "Ref": "AWS::Region" } ] ]},
         "AssumeRolePolicyDocument": {
           "Version": "2012-10-17",
           "Statement": [
