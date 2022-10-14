@@ -2,8 +2,8 @@
   "Parameters" : {
    "IAMPolicyNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMPolicy-new",
     "IAMPolicyNameStepfunction": "Stepfunction-DR-IAMPolicy",
-    "IAMRoleNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMRole-new",
-    "IAMRoleNameStepfunction": "Stepfunction-DR-IAMRole",
+    "IAMRoleNameLambdaECS": "ECSDesiredCountSyncLambda-DR-IAMRole-change1",
+    "IAMRoleNameStepfunction": "Stepfunction-DR-IAMRole-change1",
     "LambdaName": "ECS-Image-Sync-lambda",
     "TableNameEC2": "table1",
     "TableNameECS": "table2"
