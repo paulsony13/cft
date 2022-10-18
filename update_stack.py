@@ -11,7 +11,7 @@ import os
 
 REGION = os.environ['REGION']
 CHANGE_SET_NAME = 'deploy-commit-'
-STACK_NAME = os.environ['STACK-NAME']
+STACK_NAME = os.environ['STACK_NAME']
 SNS_TOPIC = 'arn:aws:sns:us-east-1:631145538984:SendCINotification'
 PARAMS_FILE = os.environ['PARAMS_FILE']
 TEMPLATE_BODY_FILE = os.environ['TEMPLATE_FILE']
