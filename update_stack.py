@@ -172,7 +172,13 @@ elif sys.argv[1] == "execute":
         )
 
         print(response['StatusReason'])
-
+        if response['StatusReason'] == "The submitted information didn't contain changes. Submit different information to create a change set.":
+            response = client.delete_change_set(
+                ChangeSetName=CHANGE_SET_NAME + COMMIT_ID,
+                StackName=STACK_NAME
+            )
+            
+            print(CHANGE_SET_NAME + COMMIT_ID+" ChangeSet Deleted !")
 
 
 
