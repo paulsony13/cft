@@ -155,12 +155,24 @@ if sys.argv[1] == "update":
 
 elif sys.argv[1] == "execute":
     print("Executing Change Set")
-    response = client.execute_change_set(
-        ChangeSetName=CHANGE_SET_NAME+COMMIT_ID,
-        StackName=STACK_NAME
-    )
+    try:
+        response = client.execute_change_set(
+            ChangeSetName=CHANGE_SET_NAME+COMMIT_ID,
+            StackName=STACK_NAME
+        )
 
-    print(response)
+        print(response)
+    except botocore.exceptions.ClientError as ex:
+        error_message = ex.response['Error']['Message']
+        print(error_message)
+
+        response = client.describe_change_set(
+            ChangeSetName=CHANGE_SET_NAME + COMMIT_ID,
+            StackName=STACK_NAME
+        )
+
+        print(response['StatusReason'])
+
 
 
 
