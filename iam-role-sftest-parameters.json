@@ -6,7 +6,7 @@
     "IAMRoleNameStepfunction": "Stepfunction-DR-IAMRole",
     "LambdaName": "ECS-Image-Sync-lambda",
     "TableNameEC2": "table1",
-    "TableNameECS": "table2"
+    "TableNameECS": "table3"
   }
 
 }
